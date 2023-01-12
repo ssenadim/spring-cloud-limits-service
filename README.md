@@ -31,3 +31,8 @@
 # Readme Note 1
 
 http://localhost:8080/limits
+
+spring.cloud.config.uri=http://localhost:8888
+spring.profiles.active=dev
+
+application.properties renamed bootstrap.properties
