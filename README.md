@@ -36,3 +36,17 @@ spring.cloud.config.uri=http://localhost:8888
 spring.profiles.active=dev
 
 application.properties renamed bootstrap.properties
+
+# Readme Note 2
+Connecting limits microservice to eureka
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        
+        @EnableDiscoveryClient
+        eureka.client.service-url.default-zone=http://localhost:8761/eureka
+        Open http://localhost:8761/ and see this message
+        LIMITS-SERVICE 	n/a (1) 	(1) 	UP (1) - host.docker.internal:limits-service:8080
+---
